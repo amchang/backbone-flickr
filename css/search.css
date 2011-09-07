@@ -1,0 +1,59 @@
+/* clearfix */
+.clearfix:before, .clearfix:after {content: "."; display: block; height: 0; overflow: hidden; visibility: hidden;}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;} /* IE < 8 */
+
+/*General CSS for general elements*/
+* {font: 14px "lucida grande",tahoma,verdana,arial,sans-serif;}
+h1 {font-size: 32px;}
+h3 {font-size: 24px;}
+h6 {font-size: 16px;}
+input {border: 1px solid #D3D3D3;}
+input[type="text"] {padding: 4px;}
+input[type="button"], input[type="submit"] {cursor: pointer; padding: 3px;}
+input[type="submit"]:hover, input[type="button"]:hover{background-color: #CCCCCC;}
+input[type="submit"]:active, input[type="button"]:active {background-color: #7F7F7F;}
+a {cursor: pointer; color: #0063DC; text-decoration: none;}
+a:hover {text-decoration: underline;}
+body {background-color: #DFDFDF;}
+p {font-size: 11px;}
+
+/*General Classes*/
+.hidden {display: none !important;}
+.error {color: #FF0000;}
+
+/*Entire page */
+#wrapper {margin: 0 auto; min-height: 950px; height: 100%; background-color: #FFFFFF; width: 985px; padding: 15px;}
+
+/*Header*/
+#header.initial {position: absolute; top: 25%; left: 50%; margin: -30px 0 0 -323px;}
+#header {margin: 0px auto; border-bottom: 1px solid #777777;}
+#logo.post {cursor: pointer;}
+#logo {padding: 0 15px 5px 0; border-right: 1px solid #777777; float: left;}
+#search {padding: 11px 0 10px 15px; float: left;}
+#searchText {width: 250px;}
+#results {font-size: 12px;}
+#load {vertical-align: bottom;}
+
+/* pagnation */
+#pagnation {clear: left; font-size: 13px; margin: 12px 0 0; text-align: center; width: 70%; float: left;}
+/*IE Hacks here*/
+#pages {display: inline; margin: 0 4px; *position: relative; *top: -5px;}
+#pages > a.page {border: 1px solid #D3D3D3; padding: 3.5px 6px; margin: 0 2px;}
+#pages > a.active {font-weight: bold; color: #FF0084 !important; background: none !important;}
+#pages > a:hover {background-color: #0063DC; color: #FFFFFF; text-decoration: none;}
+
+/*Image Gallery*/
+#content h6, #content p { margin: 6px 0; }
+#images, #imgDetail {margin-top: 10px; width: 70%; float: left;}
+#saved {margin-top: 10px; width: 26%; float: right; border-left: 1px solid #777777; padding: 0 0 15px 15px; overflow-y: auto; max-height: 750px;}
+#images > li.image, #saved  > li.image  {float: left; width: 110px; height: 140px; margin: 0 4px 6px 0;}
+#images img, #saved img {cursor: pointer;}
+#images img:hover, #saved img:hover {border: 2px solid #0063DC;}
+
+/*Single image*/
+#imgMed {width: 74%; float: left;}
+#imgLong {float: left; width: 26%;}
+#imgLong * {font-size: 13px;}
+#imgTitle {clear:left; margin: 6px 0;}
+#imgBack {margin-left: 5px;}
